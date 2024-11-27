@@ -238,7 +238,7 @@ namespace TorchSharp
         ///
         /// Primarily intended for use in interactive notebooks.
         /// </remarks>
-        public static string cstr(this Tensor tensor, string? fltFormat = "g5", int? width = 100, string? newLine = "\n", CultureInfo? cultureInfo = null)
+        public static string cstr(this Tensor tensor, string? fltFormat = "g5", int? width = 100, string? newLine = null, CultureInfo? cultureInfo = null)
         {
             return tensor.ToString(TensorStringStyle.CSharp, fltFormat, width, cultureInfo, newLine);
         }
